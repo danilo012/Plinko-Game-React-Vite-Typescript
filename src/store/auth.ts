@@ -70,7 +70,7 @@ export const useAuthStore = create<State>((setState, getState) => ({
         })
       )
     } catch (error) {
-      toast.error('Ocorreu um erro ao atualizar o saldo')
+      toast.error('An error occurred while updating the balance')
       console.error('setBalanceError', error)
     }
   },
@@ -88,7 +88,7 @@ export const useAuthStore = create<State>((setState, getState) => ({
         })
       }
     } catch (error) {
-      toast.error('Ocorreu um erro ao atualizar o saldo')
+      toast.error('An error occurred while updating the balance')
       console.error('setBalanceOnDatabaseError', error)
     }
   },
@@ -98,14 +98,14 @@ export const useAuthStore = create<State>((setState, getState) => ({
       if (balance >= 10) {
         toast.remove()
         toast.error(
-          'Você precisa ter o saldo menor abaixo de 10 para resgatar o presente'
+          'You need to have the smallest balance below 10 to redeem the gift''
         )
         return
       }
       const newBalance = random(10, 300)
       await getState().setBalanceOnDatabase(newBalance)
-      toast.success('Presente resgatado com sucesso')
-      re
+      toast.success('Gift redeemed successfully')
+      return
     } catch (error) {
       toast.error('An error occurred while redeeming the gift')
       console.error('redeemGiftError', error)
