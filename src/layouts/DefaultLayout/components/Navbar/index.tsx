@@ -46,7 +46,7 @@ export function Navbar() {
 
             <WalletCard balance={currentBalance} showFormatted />
             <button
-              title="Sair"
+              title="To go out "
               onClick={handleSignOut}
               className="rounded-md bg-purpleDark px-4 text-text hover:bg-purple"
             >
