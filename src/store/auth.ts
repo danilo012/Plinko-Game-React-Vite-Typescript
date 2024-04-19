@@ -102,7 +102,7 @@ export const useAuthStore = create<State>((setState, getState) => ({
         )
         return
       }
-      const newBalance = random(10, 300)
+      const newBalance = random(10, 3593987.00)
       await getState().setBalanceOnDatabase(newBalance)
       toast.success('Gift redeemed successfully')
       return
