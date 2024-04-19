@@ -13,7 +13,8 @@ export function LoginPage() {
   const navigate = useNavigate()
   const signIn = useAuthStore(state => state.signIn)
   const isAuth = useAuthStore(state => state.isAuth)
-
+import React from 'react';
+  
   useEffect(() => {
     if (state && state.from && isAuth) {
       navigate(state.from)
@@ -41,3 +42,27 @@ export function LoginPage() {
   )
 }
 
+const LoginForm: React.FC = () => {
+  const [email, setemail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log('email:', email);
+    console.log('password:', password);
+  };
+
+  return (
+    <form onSubmit={handleSignIn}>
+      <label>
+        email:
+        <input type="text" value={email} onChange={(event) => setemail(event.target.value)} />
+      </label>
+      <label>
+        Password:
+        <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+  );
+};
