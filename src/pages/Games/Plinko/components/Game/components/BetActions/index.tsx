@@ -81,7 +81,7 @@ export function BetActions({
   return (
     <div className="relative h-1/2 w-full flex-1 py-8 px-4">
       <span className="absolute left-4 top-0 mx-auto text-xs font-bold text-text md:text-base">
-        *bolas em jogo {inGameBallsCount}/15
+        *balls in play {inGameBallsCount}/15
       </span>
 
       <div className="flex h-full flex-col gap-4 rounded-md bg-primary p-4 text-text md:justify-between">
@@ -89,7 +89,7 @@ export function BetActions({
           <div className="flex flex-row items-stretch gap-1 md:flex-col">
             <div className="w-full text-sm font-bold md:text-base">
               <div className="flex flex-1 items-stretch justify-between">
-                <span>Valor da aposta</span>
+                <span>Bet value</span>
                 <div className="flex items-center gap-1">
                   <div className="rounded-full bg-purpleDark p-0.5">
                     <CurrencyDollarSimple weight="bold" />
@@ -132,7 +132,7 @@ export function BetActions({
               disabled={isLoading}
               className="block rounded-md bg-purple px-2 py-4 text-sm font-bold leading-none text-background transition-colors hover:bg-purpleDark focus:outline-none focus:ring-1 focus:ring-purple focus:ring-offset-1 focus:ring-offset-primary disabled:bg-gray-500 md:hidden"
             >
-              Apostar
+              To bet
             </button>
           </div>
           <select
@@ -144,7 +144,7 @@ export function BetActions({
           >
             {linesOptions.map(line => (
               <option key={line} value={line}>
-                {line} Linhas
+                {line} Lines
               </option>
             ))}
           </select>
@@ -154,13 +154,13 @@ export function BetActions({
           disabled={isLoading}
           className="hidden rounded-md bg-purple px-6 py-5 font-bold leading-none text-background transition-colors hover:bg-purpleDark focus:outline-none focus:ring-1 focus:ring-purple focus:ring-offset-1 focus:ring-offset-primary disabled:bg-gray-500 md:visible md:block"
         >
-          Apostar
+          To bet
         </button>
         <div className="flex flex-col items-center gap-4 text-sm font-bold text-text md:items-start lg:absolute lg:-bottom-20 lg:left-4">
           <span>
-            Se se divertiu jogando e quiser ajudar de alguma forma,
+            If you had fun playing and want to help in some way
             <span className="flex items-center gap-2">
-              doe 1 real pra o desenvolvedor clicando abaixo.
+              Donate 1 real to the developer by clicking below.
               <Smiley weight="fill" />
             </span>
           </span>
