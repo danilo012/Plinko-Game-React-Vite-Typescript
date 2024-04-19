@@ -168,7 +168,7 @@ export function BetActions({
             to="/contribute"
             className="flex items-center gap-2 rounded-md bg-background p-2 font-bold transition-colors hover:bg-primary/50 lg:bg-primary"
           >
-            DOAR 1 REAL <Coin />
+            DONATE 1 REAL <Coin />
           </Link>
         </div>
       </div>
