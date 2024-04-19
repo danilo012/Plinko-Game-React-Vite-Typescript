@@ -5,7 +5,7 @@ export function Contribute() {
     <div className="flex h-full flex-col items-center justify-center gap-4">
       <div className="mx-auto flex w-1/2 flex-col items-center justify-center">
         <h2 className="mb-4 flex items-center gap-2 text-center text-xl font-bold text-text">
-          Escaneie ou clique no código QR
+          Scan or click the QR code
         </h2>
         <figure>
           <a
@@ -19,7 +19,7 @@ export function Contribute() {
         </figure>
         <div className="mt-4">
           <span className="block text-center text-sm font-bold text-text">
-            ou copie a chava PIX
+            or copy the PIX key
           </span>
           <span className="block text-center text-xl font-bold text-purple">
             pix@kayooliveira.com
