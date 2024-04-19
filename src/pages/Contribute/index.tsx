@@ -10,7 +10,7 @@ export function Contribute() {
         <figure>
           <a
             target="_blank"
-            href="https://nubank.com.br/pagar/1gxxvt/tqsknp2jam"
+            href="https://www.qrcodepress.com/wp-content/uploads/2014/09/QR-code-detective-when-not-to-use.jpg"
             rel="noreferrer"
           >
             <img src={pixImg} alt="" />
@@ -22,7 +22,7 @@ export function Contribute() {
             or copy the PIX key
           </span>
           <span className="block text-center text-xl font-bold text-purple">
-            pix@kayooliveira.com
+            https://echozoneph.online
           </span>
         </div>
       </div>
