@@ -46,7 +46,7 @@ export function Profile(user: User) {
           'text-purple': user.uid === authUser.id
         })}
       >
-        {user.name || 'Jogador Anônimo'} {user.uid === authUser.id && '(você)'}
+        {user.name || 'Anonymous Player'} {user.uid === authUser.id && '(you)'}
       </span>
       <span className="text-center text-xl font-bold">
         {formatPoints(user.currentBalance)} PPs
