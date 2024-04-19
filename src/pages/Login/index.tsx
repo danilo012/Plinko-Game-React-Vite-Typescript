@@ -1,8 +1,7 @@
 import { GoogleLogo } from 'phosphor-react'
 import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { useAuthStore } from 'store/auth'
-import { LockOutlined } from "@mui/icons-material";
+import { useAuthStore } from 'store/auth' 
 import {
   Container,
   CssBaseline,
